@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3EA2DD91-A486-3D55-A48F-342351CFCC14}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_perf_tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opencvCUDA\build\3rdparty\ippicv\ippicv_win\icv\include;C:\opencvCUDA\build\3rdparty\ippicv\ippicv_win\iw\include;C:\opencvCUDA\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_aruco.vcxproj">
+      <Project>{26018686-EF15-3197-A203-0C3D0120714E}</Project>
+      <Name>opencv_perf_aruco</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_bioinspired.vcxproj">
+      <Project>{F3CB5409-79BF-3379-9060-EB1046FC9B10}</Project>
+      <Name>opencv_perf_bioinspired</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_calib3d.vcxproj">
+      <Project>{C1C23A40-7D7E-3503-A0D3-62579D5CBF39}</Project>
+      <Name>opencv_perf_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_core.vcxproj">
+      <Project>{2A3A4904-3F2B-34E5-88ED-DD1A6351D3C5}</Project>
+      <Name>opencv_perf_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudaarithm.vcxproj">
+      <Project>{D95B43D6-AE0F-3385-A362-6C2F178CAE4D}</Project>
+      <Name>opencv_perf_cudaarithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudabgsegm.vcxproj">
+      <Project>{A8F26AD8-AA8E-3C7F-BCC8-2185C856B591}</Project>
+      <Name>opencv_perf_cudabgsegm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudacodec.vcxproj">
+      <Project>{626A0681-6E06-3F3D-A40D-C2C000050BDA}</Project>
+      <Name>opencv_perf_cudacodec</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudafeatures2d.vcxproj">
+      <Project>{CA50B5D7-46EB-386C-864F-A0220E00A9AA}</Project>
+      <Name>opencv_perf_cudafeatures2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudafilters.vcxproj">
+      <Project>{F44EE1D2-2A42-3A3F-A478-C2698D415D84}</Project>
+      <Name>opencv_perf_cudafilters</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudaimgproc.vcxproj">
+      <Project>{6C717328-182B-3066-BE95-5448B3172D1F}</Project>
+      <Name>opencv_perf_cudaimgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudalegacy.vcxproj">
+      <Project>{D045EF76-76A2-3801-8CE4-51F99E597F54}</Project>
+      <Name>opencv_perf_cudalegacy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudaobjdetect.vcxproj">
+      <Project>{17500FBA-A978-3C5E-8C35-B2FA9C0E4D3D}</Project>
+      <Name>opencv_perf_cudaobjdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudaoptflow.vcxproj">
+      <Project>{9AB98185-E235-3EB3-ACEE-DBCEA7CBC136}</Project>
+      <Name>opencv_perf_cudaoptflow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudastereo.vcxproj">
+      <Project>{EE7DF671-0BE9-369A-B58E-396D1932AA1E}</Project>
+      <Name>opencv_perf_cudastereo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_cudawarping.vcxproj">
+      <Project>{BAFE1DEA-053D-3163-B9D4-7521EDB5A7E0}</Project>
+      <Name>opencv_perf_cudawarping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_dnn.vcxproj">
+      <Project>{6BBA43B5-D986-39C4-BBDA-9703561A3705}</Project>
+      <Name>opencv_perf_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_dnn_superres.vcxproj">
+      <Project>{5F53F38C-F028-3421-B781-140E36B3D904}</Project>
+      <Name>opencv_perf_dnn_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_features2d.vcxproj">
+      <Project>{2479C1FB-116D-3441-A0B9-9F872DEFFC9B}</Project>
+      <Name>opencv_perf_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_gapi.vcxproj">
+      <Project>{C4076405-F484-37AA-8EF6-0F714094210F}</Project>
+      <Name>opencv_perf_gapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_imgcodecs.vcxproj">
+      <Project>{B17D5E2D-A25C-3E64-94E2-52F8ED521C8F}</Project>
+      <Name>opencv_perf_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_imgproc.vcxproj">
+      <Project>{AEAE699F-66C5-3E08-8434-655BFCDC7818}</Project>
+      <Name>opencv_perf_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_line_descriptor.vcxproj">
+      <Project>{DE32D190-AB3B-3F1F-8633-A6958D34F738}</Project>
+      <Name>opencv_perf_line_descriptor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_objdetect.vcxproj">
+      <Project>{9DF8AF94-87DD-3F49-97F1-2686CB143CAB}</Project>
+      <Name>opencv_perf_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_optflow.vcxproj">
+      <Project>{ADC7DF2C-03B5-36FD-A7E1-725BDC307B38}</Project>
+      <Name>opencv_perf_optflow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_photo.vcxproj">
+      <Project>{00D1EBB8-6CB2-3086-AD28-A56C3839F18F}</Project>
+      <Name>opencv_perf_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_reg.vcxproj">
+      <Project>{2A90219D-30B6-326C-91D1-28C400850170}</Project>
+      <Name>opencv_perf_reg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_rgbd.vcxproj">
+      <Project>{C76C098C-DC47-3E54-8E6A-F5835ECE8900}</Project>
+      <Name>opencv_perf_rgbd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_stereo.vcxproj">
+      <Project>{B6439C4A-F29E-38FB-92F8-CD8008CBB789}</Project>
+      <Name>opencv_perf_stereo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_stitching.vcxproj">
+      <Project>{3BEDF615-5E17-3353-A92F-892E63EF8ED7}</Project>
+      <Name>opencv_perf_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_superres.vcxproj">
+      <Project>{6DF06C2F-B19D-3A00-8F3F-4F745381035B}</Project>
+      <Name>opencv_perf_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_tracking.vcxproj">
+      <Project>{7BB257B3-C842-38D1-AE0D-BAE525D0D365}</Project>
+      <Name>opencv_perf_tracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_video.vcxproj">
+      <Project>{C184FBD7-68EB-3406-BDB2-BF8BB2D9BF03}</Project>
+      <Name>opencv_perf_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_videoio.vcxproj">
+      <Project>{DC576222-7C06-3408-8119-86DD35C308C2}</Project>
+      <Name>opencv_perf_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_wechat_qrcode.vcxproj">
+      <Project>{2EB8A50F-85E3-3FE2-8E69-BF4054CBED89}</Project>
+      <Name>opencv_perf_wechat_qrcode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_xfeatures2d.vcxproj">
+      <Project>{FE45A371-FA29-3AC6-A98C-99E9DD2CD965}</Project>
+      <Name>opencv_perf_xfeatures2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_ximgproc.vcxproj">
+      <Project>{4AE44A53-D289-3F18-B669-3FB07D1139CD}</Project>
+      <Name>opencv_perf_ximgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\opencvCUDA\build\modules\world\opencv_perf_xphoto.vcxproj">
+      <Project>{A5141141-C81B-30AF-9C30-0FEBDEE73CA1}</Project>
+      <Name>opencv_perf_xphoto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
